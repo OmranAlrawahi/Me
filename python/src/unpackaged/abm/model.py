@@ -18,6 +18,19 @@ print (y0,x0)
 
 # Set up variable
 y1 = 50
+x1 = 50
+
+# Random walk one step
+if random.random() < 0.5:
+    y1 += 1
+    x1 += 1
+else:
+    y1 -= 1
+    x1 -= 1
+print (y1,x1)
+
+
+
 answer = (((y0 - y1)**2) + ((x0 - x1)**2))**0.5
 print(answer)
 
